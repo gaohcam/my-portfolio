@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Thị Cẩm Hồng — SEO & Digital Marketing Specialist</title>
+  <meta name="description" content="La Thị Cẩm Hồng — SEO Fullstack Executive & Digital Marketing Specialist. Kinh nghiệm SEO Onpage/Offpage, quản trị Website WordPress, Content Marketing và Social Media đa nền tảng.">
+  <meta name="keywords" content="SEO, Digital Marketing, SEO Fullstack, WordPress, Content Marketing, Social Media, TikTok Shop, La Thị Cẩm Hồng">
+  <meta name="author" content="La Thị Cẩm Hồng">
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Open Graph / Facebook & Zalo preview -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="La Thị Cẩm Hồng — SEO & Digital Marketing Specialist">
+  <meta property="og:description" content="SEO Fullstack Executive & Digital Marketing Specialist — SEO Onpage/Offpage, WordPress, Content Marketing, Social Media đa nền tảng.">
+  <meta property="og:image" content="images/avatar.jpg">
+  <meta property="og:locale" content="vi_VN">
+
+  <!-- Favicon (emoji, không cần file ảnh) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230d0d0d'/%3E%3Ctext x='50' y='68' font-size='55' text-anchor='middle' fill='%23c8f135' font-family='sans-serif' font-weight='800'%3ECH%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Lexend:wght@700;800;900&family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Schema.org Person markup — giúp Google hiểu đây là trang cá nhân -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "La Thị Cẩm Hồng",
+    "jobTitle": "SEO Fullstack Executive & Digital Marketing Specialist",
+    "email": "mailto:lacamhong.work@gmail.com",
+    "telephone": "+84794929103",
+    "alumniOf": "Trường Đại học Ngoại ngữ - Tin học TP.HCM (HUFLIT)",
+    "knowsAbout": ["SEO", "WordPress", "Content Marketing", "Social Media", "E-commerce", "PHP"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #0d0d0d;
+      --cream: #f5f0e8;
+      --lime: #c8f135;
+      --rose: #ff4d6d;
+      --sky: #4cc9f0;
+      --warm: #ffbe0b;
+      --green: #06d6a0;
+      --muted: #6b6b6b;
+      --card-bg: #ffffff;
+      --mono: 'IBM Plex Mono', monospace;
+      --display: 'Lexend', sans-serif;
+      --body: 'Be Vietnam Pro', sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* --- CUSTOM CURSOR --- */
+    .cursor {
+      width: 14px; height: 14px;
+      background: var(--rose);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9999;
+      mix-blend-mode: multiply;
+      transition: transform 0.15s ease, width 0.2s, height 0.2s, background 0.2s;
+    }
+    .cursor-ring {
+      width: 40px; height: 40px;
+      border: 2px solid var(--ink);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 9998;
+      transition: all 0.1s ease;
+      transform: translate(-50%, -50%);
+    }
+    body:hover .cursor { transform: translate(-50%, -50%); }
+
+    /* --- NOISE OVERLAY --- */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 1000; opacity: 0.4;
+    }
+
+    /* --- MARQUEE STRIP --- */
+    .marquee-strip {
+      background: var(--ink); color: var(--lime);
+      padding: 12px 0; overflow: hidden;
+      font-family: var(--mono); font-size: 13px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      position: sticky; top: 0; z-index: 500;
+    }
+    .marquee-inner { display: flex; animation: marquee 20s linear infinite; white-space: nowrap; }
+    .marquee-inner span { padding: 0 40px; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    /* === HERO === */
+    .hero {
+      min-height: 100vh; min-height: 100dvh; display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative; overflow: hidden;
+    }
+
+    /* Left panel */
+    .hero-left {
+      background: var(--ink); color: var(--cream);
+      padding: 80px 60px; display: flex; flex-direction: column;
+      justify-content: space-between; position: relative;
+    }
+    .hero-left::after {
+      content: '';
+      position: absolute; right: -30px; top: 0; bottom: 0; width: 60px;
+      background: var(--ink);
+      clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%);
+      z-index: 2;
+    }
+
+    .avatar-wrap {
+      width: 92px; height: 92px; border-radius: 50%;
+      border: 2px solid var(--lime); padding: 4px; margin-bottom: 24px;
+      animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.1s both;
+    }
+    .avatar-img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; background: rgba(245,240,232,0.08); }
+    .avatar-empty {
+      width: 100%; height: 100%; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(245,240,232,0.08); color: rgba(245,240,232,0.4); font-size: 26px;
+    }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--lime); color: var(--ink);
+      padding: 8px 16px; border-radius: 100px;
+      font-family: var(--mono); font-size: 11px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      width: fit-content; margin-bottom: 50px;
+      animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.2s both;
+    }
+    .blink { animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .hero-name {
+      font-family: var(--display); font-weight: 800;
+      font-size: clamp(52px, 6vw, 90px);
+      line-height: 0.95; letter-spacing: -2px;
+      animation: slideUp 0.8s cubic-bezier(0.22,1,0.36,1) 0.3s both;
+    }
+    .hero-name .accent { color: var(--lime); display: block; }
+    .hero-name .accent2 { color: var(--rose); display: block; }
+
+    .hero-dob {
+      font-family: var(--mono); font-size: 13px; color: rgba(245,240,232,0.5);
+      margin-top: 20px; letter-spacing: 3px;
+      animation: slideUp 0.8s cubic-bezier(0.22,1,0.36,1) 0.5s both;
+    }
+
+    .sticker-row {
+      display: flex; gap: 15px; flex-wrap: wrap; margin-top: auto; padding-top: 50px;
+      animation: slideUp 0.8s cubic-bezier(0.22,1,0.36,1) 0.7s both;
+    }
+    .sticker {
+      padding: 10px 18px; border-radius: 100px;
+      font-family: var(--mono); font-size: 11px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      border: 2px solid; cursor: default;
+      transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .sticker:hover { transform: rotate(-5deg) scale(1.1); }
+    .sticker.s1 { border-color: var(--lime); color: var(--lime); }
+    .sticker.s2 { border-color: var(--rose); color: var(--rose); }
+    .sticker.s3 { border-color: var(--sky); color: var(--sky); }
+    .sticker.s4 { border-color: var(--warm); color: var(--warm); }
+
+    /* Right panel */
+    .hero-right {
+      background: var(--cream);
+      padding: 80px 60px 80px 80px;
+      display: flex; flex-direction: column; justify-content: center; gap: 50px;
+    }
+
+    .about-block {}
+    .about-label {
+      font-family: var(--mono); font-size: 11px; font-weight: 700;
+      letter-spacing: 3px; text-transform: uppercase;
+      color: var(--muted); display: flex; align-items: center; gap: 10px;
+      margin-bottom: 20px;
+    }
+    .about-label::before { content: ''; display: block; width: 30px; height: 2px; background: var(--rose); }
+    .about-text {
+      font-size: 18px; line-height: 1.8; color: var(--ink);
+      font-weight: 400;
+    }
+    .about-text strong { font-style: normal; font-weight: 600; color: var(--ink); }
+
+    .contact-block {}
+    .contact-list { display: flex; flex-direction: column; gap: 14px; }
+    .contact-item {
+      display: flex; align-items: center; gap: 14px;
+      font-family: var(--mono); font-size: 14px;
+      padding: 16px 20px;
+      border: 2px solid var(--ink); border-radius: 12px;
+      background: transparent; color: var(--ink);
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+    .contact-item:hover { background: var(--ink); color: var(--cream); transform: translateX(6px); }
+    .contact-item .ci-icon { width: 20px; text-align: center; }
+
+    .cta-row { display: flex; gap: 15px; flex-wrap: wrap; }
+    .cta-btn {
+      padding: 16px 30px; border-radius: 12px; font-family: var(--mono);
+      font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+      transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1); cursor: pointer; border: none;
+    }
+    .cta-filled { background: var(--ink); color: var(--lime); }
+    .cta-filled:hover { background: var(--rose); color: white; transform: translateY(-4px); }
+    .cta-outline { border: 2px solid var(--ink); color: var(--ink); background: transparent; }
+    .cta-outline:hover { background: var(--sky); border-color: var(--sky); transform: translateY(-4px); }
+
+    /* === SECTIONS === */
+    section { padding: 100px 0; }
+    .container { width: 92%; max-width: 1200px; margin: 0 auto; }
+
+    .sec-header { margin-bottom: 60px; display: flex; align-items: flex-end; justify-content: space-between; }
+    .sec-num { font-family: var(--mono); font-size: 13px; color: var(--muted); letter-spacing: 3px; margin-bottom: 8px; }
+    .sec-title { font-family: var(--display); font-size: clamp(36px, 4vw, 56px); font-weight: 800; line-height: 0.95; letter-spacing: -1px; }
+    .sec-title .hl { background: var(--lime); padding: 0 6px; }
+    .sec-line { width: 60px; height: 4px; background: var(--rose); margin-top: 16px; }
+
+    /* === EXPERIENCE === */
+    #experience { background: var(--ink); color: var(--cream); }
+    #experience .sec-title { color: var(--cream); }
+    #experience .sec-num { color: rgba(245,240,232,0.4); }
+    #experience .sec-line { background: var(--lime); }
+
+    .exp-grid { display: grid; gap: 2px; }
+    .exp-row {
+      display: grid; grid-template-columns: 180px 1fr auto;
+      align-items: start; gap: 40px;
+      padding: 40px 0; border-bottom: 1px solid rgba(245,240,232,0.1);
+      transition: background 0.3s;
+    }
+    .exp-row:last-child { border-bottom: none; }
+    .exp-row:hover { background: rgba(200,241,53,0.04); padding-left: 20px; }
+    .exp-period {
+      font-family: var(--mono); font-size: 13px; color: var(--lime);
+      padding-top: 6px; letter-spacing: 1px;
+    }
+    .exp-main h3 { font-family: var(--display); font-size: 28px; font-weight: 700; margin-bottom: 5px; }
+    .exp-co { font-family: var(--mono); font-size: 13px; color: rgba(245,240,232,0.5); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+    .exp-bullets { list-style: none; }
+    .exp-bullets li {
+      color: rgba(245,240,232,0.7); font-size: 15px; padding: 6px 0;
+      border-bottom: 1px dashed rgba(245,240,232,0.1);
+      display: flex; gap: 12px; align-items: baseline;
+    }
+    .exp-bullets li::before { content: '→'; color: var(--lime); flex-shrink: 0; font-family: var(--mono); }
+    .exp-tag {
+      padding: 8px 16px; background: rgba(200,241,53,0.1); border: 1px solid var(--lime);
+      color: var(--lime); border-radius: 100px; font-family: var(--mono);
+      font-size: 11px; font-weight: 700; white-space: nowrap; height: fit-content;
+    }
+
+    /* === SKILLS === */
+    #skills { background: var(--cream); }
+    .skills-bento {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .skill-tile {
+      background: var(--card-bg); border-radius: 28px; padding: 40px;
+      border: 2px solid transparent; position: relative; overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .skill-tile:hover { transform: translateY(-8px) rotate(-0.5deg); border-color: var(--ink); }
+    .skill-tile.wide { grid-column: span 2; }
+    .skill-tile.tall { grid-row: span 2; }
+
+    .tile-emoji {
+      font-size: 48px; margin-bottom: 20px; display: block;
+      filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+    }
+    .tile-title { font-family: var(--display); font-size: 24px; font-weight: 700; margin-bottom: 20px; }
+    .tile-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      padding: 7px 14px; border-radius: 100px; font-family: var(--mono);
+      font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+    }
+    .chip.c-ink { background: var(--ink); color: var(--cream); }
+    .chip.c-lime { background: var(--lime); color: var(--ink); }
+    .chip.c-rose { background: #ffe8ec; color: var(--rose); border: 1px solid var(--rose); }
+    .chip.c-sky { background: #e0f7fe; color: #0077a8; border: 1px solid var(--sky); }
+    .chip.c-warm { background: #fff8e1; color: #b37a00; border: 1px solid var(--warm); }
+    .chip.c-green { background: #e0faf4; color: #027a5e; border: 1px solid var(--green); }
+
+    /* accent BG for tiles */
+    .tile-bg-1::after { content: ''; position: absolute; right: -20px; bottom: -20px; width: 120px; height: 120px; background: var(--lime); border-radius: 50%; opacity: 0.15; }
+    .tile-bg-2::after { content: ''; position: absolute; right: -20px; bottom: -20px; width: 120px; height: 120px; background: var(--rose); border-radius: 50%; opacity: 0.1; }
+    .tile-bg-3::after { content: ''; position: absolute; right: -20px; bottom: -20px; width: 120px; height: 120px; background: var(--sky); border-radius: 50%; opacity: 0.15; }
+
+    /* === PROJECTS === */
+    #projects { background: var(--ink); color: var(--cream); }
+    #projects .sec-title { color: var(--cream); }
+    #projects .sec-num { color: rgba(245,240,232,0.4); }
+    #projects .sec-line { background: var(--rose); }
+
+    .proj-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .proj-card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px; padding: 40px; position: relative; overflow: hidden;
+      transition: all 0.4s ease; display: flex; flex-direction: column;
+    }
+    .proj-card:hover { background: rgba(255,255,255,0.08); border-color: var(--lime); transform: translateY(-6px); }
+    .proj-num { font-family: var(--mono); font-size: 50px; font-weight: 700; color: rgba(200,241,53,0.15); line-height: 1; margin-bottom: 20px; }
+    .proj-card h4 { font-family: var(--display); font-size: 28px; font-weight: 800; margin-bottom: 10px; }
+    .proj-card p { color: rgba(245,240,232,0.6); font-size: 15px; line-height: 1.7; flex: 1; margin-bottom: 30px; }
+    .proj-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: auto; }
+    .pl {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 16px; border-radius: 100px;
+      font-family: var(--mono); font-size: 12px; font-weight: 700;
+      text-decoration: none; transition: all 0.2s ease; letter-spacing: 0.5px;
+    }
+    .pl-web { background: var(--lime); color: var(--ink); }
+    .pl-web:hover { background: white; }
+    .pl-sm { background: rgba(255,255,255,0.08); color: var(--cream); border: 1px solid rgba(255,255,255,0.15); }
+    .pl-sm:hover { background: var(--rose); border-color: var(--rose); color: white; }
+
+    /* === PROOF / RESULTS === */
+    #proof { background: var(--cream); }
+    .proof-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .proof-card {
+      background: var(--card-bg); border-radius: 20px; overflow: hidden;
+      border: 2px solid var(--ink); transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .proof-card:hover { transform: translateY(-6px); box-shadow: 8px 8px 0 var(--ink); }
+    .proof-chrome {
+      display: flex; align-items: center; gap: 8px;
+      padding: 12px 16px; background: var(--ink);
+    }
+    .proof-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .proof-dot.d1 { background: var(--rose); }
+    .proof-dot.d2 { background: var(--warm); }
+    .proof-dot.d3 { background: var(--green); }
+    .proof-chrome span {
+      margin-left: 12px; font-family: var(--mono); font-size: 11px;
+      color: rgba(245,240,232,0.5); letter-spacing: 1px;
+    }
+    .proof-shot {
+      width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+      display: block; background: #eee;
+    }
+    .proof-empty {
+      width: 100%; aspect-ratio: 16 / 9;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 10px; background: repeating-linear-gradient(45deg, #ece6db, #ece6db 12px, #e4dccd 12px, #e4dccd 24px);
+      color: var(--muted); font-family: var(--mono); font-size: 12px; text-align: center; padding: 20px;
+    }
+    .proof-empty i { font-size: 26px; opacity: 0.5; }
+    .proof-caption {
+      padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .proof-caption h5 { font-family: var(--display); font-size: 17px; font-weight: 700; }
+    .proof-caption p { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.5px; margin-top: 4px; }
+    .proof-metric {
+      font-family: var(--mono); font-size: 12px; font-weight: 700;
+      color: var(--ink); background: var(--lime);
+      padding: 6px 12px; border-radius: 100px; white-space: nowrap;
+    }
+
+    .proof-group { margin-top: 60px; }
+    .proof-group:first-of-type { margin-top: 0; }
+    .proof-group-head {
+      display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
+    }
+    .proof-group-num {
+      font-family: var(--mono); font-size: 12px; font-weight: 700;
+      color: var(--ink); background: var(--lime);
+      padding: 6px 14px; border-radius: 100px; white-space: nowrap;
+    }
+    .proof-group-title { font-family: var(--display); font-size: 24px; font-weight: 700; }
+    .proof-group-line { flex: 1; height: 1px; background: rgba(13,13,13,0.12); }
+
+    /* === CONTACT === */
+    #contact { background: var(--cream); }
+    .contact-big {
+      background: var(--ink); color: var(--cream);
+      border-radius: 40px; padding: 100px 80px;
+      position: relative; overflow: hidden;
+    }
+    .contact-big::before {
+      content: 'HÃY NÓI CHUYỆN';
+      font-family: var(--display); font-size: 200px; font-weight: 800;
+      color: rgba(200,241,53,0.05); position: absolute;
+      bottom: -40px; left: -10px; white-space: nowrap; line-height: 1;
+      pointer-events: none; letter-spacing: -5px;
+    }
+    .contact-inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .c-left h2 { font-family: var(--display); font-size: clamp(40px, 4vw, 65px); font-weight: 800; line-height: 1; letter-spacing: -2px; margin-bottom: 20px; }
+    .c-left h2 em { color: var(--lime); font-style: normal; }
+    .c-left p { color: rgba(245,240,232,0.6); font-size: 17px; line-height: 1.8; }
+    .c-right { display: flex; flex-direction: column; gap: 16px; }
+    .c-btn {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 28px; border-radius: 18px;
+      font-family: var(--mono); font-size: 14px; font-weight: 700; letter-spacing: 1px;
+      text-decoration: none; transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .c-btn .arr { font-size: 20px; transition: transform 0.3s ease; }
+    .c-btn:hover .arr { transform: translate(4px, -4px); }
+    .c-email { background: var(--lime); color: var(--ink); }
+    .c-email:hover { background: white; transform: scale(1.02); }
+    .c-phone { background: rgba(255,255,255,0.06); color: var(--cream); border: 1px solid rgba(255,255,255,0.12); }
+    .c-phone:hover { background: var(--rose); border-color: var(--rose); transform: scale(1.02); }
+    .c-li { background: rgba(255,255,255,0.06); color: var(--cream); border: 1px solid rgba(255,255,255,0.12); }
+    .c-li:hover { background: var(--sky); border-color: var(--sky); color: var(--ink); transform: scale(1.02); }
+
+    footer {
+      background: var(--ink); color: rgba(245,240,232,0.3);
+      text-align: center; padding: 40px;
+      font-family: var(--mono); font-size: 13px; letter-spacing: 2px;
+    }
+
+    /* === ANIMATIONS === */
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.6); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0; transform: translateY(50px);
+      transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22,1,0.36,1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.1s; }
+    .reveal-d2 { transition-delay: 0.2s; }
+    .reveal-d3 { transition-delay: 0.3s; }
+
+    /* === ACCESSIBILITY === */
+    a:focus-visible, button:focus-visible, .contact-item:focus-visible {
+      outline: 3px solid var(--rose); outline-offset: 3px; border-radius: 6px;
+    }
+
+    /* Tôn trọng người dùng bật "giảm chuyển động" trong hệ điều hành */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .marquee-inner { animation: none !important; }
+      .cursor, .cursor-ring { display: none !important; }
+      body { cursor: auto; }
+    }
+
+    /* Thiết bị cảm ứng (điện thoại/tablet) không có hover -> tắt cursor tùy chỉnh, trả lại con trỏ mặc định */
+    @media (hover: none), (pointer: coarse) {
+      body { cursor: auto; }
+      .cursor, .cursor-ring { display: none !important; }
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-left::after { display: none; }
+      .hero-left { padding: 60px 30px 50px; }
+      .hero-right { padding: 50px 30px 80px; }
+      .exp-row { grid-template-columns: 1fr; gap: 10px; }
+      .exp-tag { display: none; }
+      .skills-bento, .proj-grid, .proof-grid { grid-template-columns: 1fr; }
+      .skill-tile.wide { grid-column: span 1; }
+      .contact-inner { grid-template-columns: 1fr; gap: 50px; }
+      .contact-big { padding: 60px 30px; }
+      .sec-header { flex-direction: column; align-items: flex-start; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Sticky marquee -->
+  <div class="marquee-strip">
+    <div class="marquee-inner">
+      <span>✦ SEO FULLSTACK</span>
+      <span>✦ SOCIAL MEDIA</span>
+      <span>✦ E-COMMERCE</span>
+      <span>✦ CONTENT CREATOR</span>
+      <span>✦ DIGITAL MARKETING</span>
+      <span>✦ TIKTOK SHOP</span>
+      <span>✦ WORDPRESS</span>
+      <span>✦ PHP</span>      
+      <span>✦ SEO FULLSTACK</span>
+      <span>✦ SOCIAL MEDIA</span>
+      <span>✦ E-COMMERCE</span>
+      <span>✦ CONTENT CREATOR</span>
+      <span>✦ DIGITAL MARKETING</span>
+      <span>✦ TIKTOK SHOP</span>
+      <span>✦ WORDPRESS</span>
+      <span>✦ PHP</span>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-left">
+      <div>
+        <div class="avatar-wrap">
+          <!-- Thay src bằng ảnh chân dung thật, ví dụ: images/avatar.jpg -->
+          <img class="avatar-img" src="image\la-cam-hong-portfolio.jpg" alt="Ảnh chân dung La Thị Cẩm Hồng"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'avatar-empty', innerHTML:'<i class=\'fa-solid fa-user\'></i>'}))">
+        </div>
+        <div class="hero-badge">
+          <span class="blink">◉</span> AVAILABLE FOR WORK
+        </div>
+        <div class="hero-name">
+          LA THỊ
+          <span class="accent">CẨM</span>
+          <span class="accent2">HỒNG</span>
+        </div>
+        <div class="hero-dob">
+          <i class="fa-solid fa-cake-candles" style="margin-right: 8px; opacity: 0.4;"></i>
+          24 · 07 · 2002
+        </div>
+      </div>
+      <div class="sticker-row">
+        <span class="sticker s1">SEO</span>
+        <span class="sticker s2">Social</span>
+        <span class="sticker s3">E-Com</span>
+        <span class="sticker s4">Content</span>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="about-block">
+        <div class="about-label">About Me</div>
+        <p class="about-text">
+<p class="about-text">
+  Xin chào! Tôi có kinh nghiệm trong lĩnh vực 
+  <strong>SEO Website</strong>, 
+  <strong>quản trị website WordPress/PHP</strong>, 
+  <strong>content marketing</strong> và 
+  <strong>social media đa nền tảng</strong>. 
+
+  Có khả năng triển khai các công việc từ tối ưu SEO, xây dựng nội dung, quản lý website đến phát triển hệ thống social nhằm hỗ trợ doanh nghiệp nâng cao hiệu quả truyền thông và tăng trưởng thương hiệu trên nền tảng số.
+</p>
+
+<p class="about-text">
+  Tốt nghiệp ngành 
+  <strong>Hệ thống thông tin</strong> tại 
+  <strong>HUFLIT</strong>, tôi có nền tảng về tư duy hệ thống, quản trị website và khả năng kết hợp giữa kỹ thuật website với marketing để phục vụ hiệu quả cho các dự án SEO và Digital Marketing.
+</p>
+        </p>
+      </div>
+
+      <div class="contact-block">
+        <div class="about-label">Liên hệ</div>
+        <div class="contact-list">
+          <a href="mailto:lacamhong.work@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope ci-icon"></i>
+            lacamhong.work@gmail.com
+          </a>
+          <a href="tel:0794929103" class="contact-item">
+            <i class="fa-solid fa-phone ci-icon"></i>
+            0794.929.103
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a href="mailto:lacamhong.work@gmail.com" class="cta-btn cta-filled">
+          <i class="fa-solid fa-paper-plane"></i> Liên hệ ngay
+        </a>
+        <a href="#projects" class="cta-btn cta-outline">
+          <i class="fa-solid fa-folder-open"></i> Xem dự án
+        </a>
+        <!-- Thay href bằng đường dẫn file CV PDF thật, ví dụ: cv/la-thi-cam-hong-cv.pdf -->
+        <a href="CV\CV - La Thi Cam Hong.pdf" download class="cta-btn cta-outline">
+          <i class="fa-solid fa-download"></i> Tải CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div>
+          <div class="sec-num">01 / EXPERIENCE</div>
+          <h2 class="sec-title">Kinh Nghiệm<br><span class="hl">Làm Việc</span></h2>
+          <div class="sec-line"></div>
+        </div>
+      </div>
+
+      <div class="exp-grid">
+        <div class="exp-row reveal reveal-d1">
+          <div class="exp-period">2025<br>→ Hiện tại</div>
+          <div class="exp-main">
+            <h3>SEO Website Fullstack Executive</h3>
+            <span class="exp-co">Thanh Tien Group</span>
+            <ul class="exp-bullets">
+              <li>Thực thi chiến lược SEO Onpage và Offpage chuyên sâu cho hệ sinh thái website.</li>
+              <li>Quản trị hệ thống Website, tối ưu kỹ thuật SEO Technical và Social Channel.</li>
+            </ul>
+          </div>
+          <div class="exp-tag">Full-time</div>
+        </div>
+
+        <div class="exp-row reveal reveal-d2">
+          <div class="exp-period">2023<br>→ 2025</div>
+          <div class="exp-main">
+            <h3>Social Media & E-commerce Admin</h3>
+            <span class="exp-co">Nhiên Vintage</span>
+            <ul class="exp-bullets">
+              <li>Quản trị kênh Social và vận hành sàn Thương mại điện tử (Shopee, TikTok Shop).</li>
+              <li>Sáng tạo nội dung hình ảnh & video thúc đẩy tăng trưởng thương hiệu thời trang.</li>
+            </ul>
+          </div>
+          <div class="exp-tag">Full-time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div>
+          <div class="sec-num">02 / SKILLS</div>
+          <h2 class="sec-title">Kỹ Năng<br><span class="hl">Thực Chiến</span></h2>
+          <div class="sec-line"></div>
+        </div>
+      </div>
+
+      <div class="skills-bento">
+        <div class="skill-tile tile-bg-1 reveal reveal-d1">
+          <span class="tile-emoji">🔍</span>
+          <div class="tile-title">SEO & Technical</div>
+          <div class="tile-chips">
+            <span class="chip c-ink">SEO Onpage</span>
+            <span class="chip c-lime">SEO Offpage</span>
+            <span class="chip c-ink">Technical Audit</span>
+            <span class="chip c-rose">Schema Markup</span>
+            <span class="chip c-ink">WordPress / PHP</span>
+            <span class="chip c-lime">Google Search Console</span>
+            <span class="chip c-ink">Google Analytics</span>
+            <span class="chip c-rose">Screaming Frog</span>
+            <span class="chip c-lime">AI Productivity</span>
+          </div>
+        </div>
+
+        <div class="skill-tile tile-bg-2 reveal reveal-d2">
+          <span class="tile-emoji">🎬</span>
+          <div class="tile-title">Video & Creative</div>
+          <div class="tile-chips">
+            <span class="chip c-rose">CapCut Pro</span>
+            <span class="chip c-ink">Canva</span>
+            <span class="chip c-sky">Photoshop</span>
+            <span class="chip c-ink">AI Content Script</span>
+          </div>
+        </div>
+
+        <div class="skill-tile tile-bg-3 reveal reveal-d3">
+          <span class="tile-emoji">🛒</span>
+          <div class="tile-title">E-Commerce</div>
+          <div class="tile-chips">
+            <span class="chip c-sky">TikTok Shop</span>
+            <span class="chip c-ink">Shopee</span>
+            <span class="chip c-warm">Multi-channel</span>
+            <span class="chip c-green">Social Ads</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & CERTIFICATES ===== -->
+  <section id="education" style="background: var(--cream); padding-top: 0;">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div>
+          <div class="sec-num">03 / EDUCATION</div>
+          <h2 class="sec-title">Học Vấn<br><span class="hl">& Chứng Chỉ</span></h2>
+          <div class="sec-line"></div>
+        </div>
+      </div>
+
+      <div class="skills-bento">
+        <div class="skill-tile tile-bg-1 reveal reveal-d1">
+          <span class="tile-emoji">🎓</span>
+          <div class="tile-title">Hệ Thống Thông Tin</div>
+          <p style="font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: 1px; margin-bottom: 16px;">HUFLIT · Cử nhân</p>
+          <div class="tile-chips">
+            <span class="chip c-ink">Tư duy hệ thống</span>
+            <span class="chip c-lime">Quản trị Website</span>
+          </div>
+        </div>
+
+        <div class="skill-tile tile-bg-2 reveal reveal-d2">
+          <span class="tile-emoji">📜</span>
+          <div class="tile-title">Chứng Chỉ Chuyên Môn</div>
+          <!-- TODO: thay bằng chứng chỉ thật bạn đang có, ví dụ Google Analytics, Google Ads, HubSpot Content Marketing... -->
+          <div class="tile-chips">
+            <span class="chip c-rose">Google Analytics (đang cập nhật)</span>
+            <span class="chip c-ink">SEO Fundamentals (đang cập nhật)</span>
+          </div>
+        </div>
+
+        <div class="skill-tile tile-bg-3 reveal reveal-d3">
+          <span class="tile-emoji">🌐</span>
+          <div class="tile-title">Ngoại Ngữ</div>
+          <!-- TODO: cập nhật trình độ ngoại ngữ thật -->
+          <div class="tile-chips">
+            <span class="chip c-sky">Tiếng Anh — đang cập nhật</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div>
+          <div class="sec-num">04 / PROJECTS</div>
+          <h2 class="sec-title">Dự Án<br><span style="color: var(--rose);">Tiêu Biểu</span></h2>
+          <div class="sec-line"></div>
+        </div>
+      </div>
+
+      <div class="proj-grid">
+        <div class="proj-card reveal reveal-d1">
+          <div class="proj-num">01</div>
+          <h4>Giftbag.vn</h4>
+          <p>Xây dựng chiến lược SEO phủ thị trường Hà Nội, sản xuất túi vải balo quà tặng doanh nghiệp B2B — từ technical đến content & social.</p>
+          <div class="proj-links">
+            <a href="https://giftbag.vn/" target="_blank" class="pl pl-web"><i class="fa-solid fa-globe"></i> Website</a>
+            <a href="https://www.facebook.com/tuivaigiftbag" target="_blank" class="pl pl-sm"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@tuivaigiftbag" target="_blank" class="pl pl-sm"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@tuivaigiftbag" target="_blank" class="pl pl-sm"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal reveal-d2">
+          <div class="proj-num">02</div>
+          <h4>Greenclothbag</h4>
+          <p>Phát triển nội dung đa nền tảng cho sản phẩm túi vải thân thiện môi trường, xây dựng brand awareness.</p>
+          <div class="proj-links">
+            <a href="https://greenclothbag.com/" target="_blank" class="pl pl-web"><i class="fa-solid fa-globe"></i> Website</a>
+            <a href="https://www.facebook.com/greenclothbag" target="_blank" class="pl pl-sm"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@greenclothbag" target="_blank" class="pl pl-sm"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@congtytuivaigreenclothbag" target="_blank" class="pl pl-sm"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal reveal-d3">
+          <div class="proj-num">03</div>
+          <h4>Taitailieu.net</h4>
+          <p>Tối ưu SEO kỹ thuật và cấu trúc website chia sẻ tài liệu, thúc đẩy traffic tự nhiên.</p>
+          <div class="proj-links">
+            <a href="https://taitailieu.net/" target="_blank" class="pl pl-web"><i class="fa-solid fa-globe"></i> Website</a>
+            <a href="https://www.facebook.com/taitailieunet" target="_blank" class="pl pl-sm"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card reveal reveal-d1">
+          <div class="proj-num">04</div>
+          <h4>Túi Vải Thành Tiến</h4>
+          <p>Phụ trách SEO Fullstack cho dự án Túi Vải Thành Tiến — tối ưu Technical SEO, xây dựng nội dung Onpage/Offpage và quản trị kênh Social song song, giúp website leo hạng bền vững trên Google.</p>
+          <div class="proj-links">
+            <!-- TODO: thay # bằng link website / social thật của Túi Vải Thành Tiến -->
+            <a href="https://tuivaithanhtien.com/" target="_blank" class="pl pl-web"><i class="fa-solid fa-globe"></i> Website</a>
+            <a href="https://www.facebook.com/tuivaithanhtien/" target="_blank" class="pl pl-sm"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@tuivai_thanhtien" target="_blank" class="pl pl-sm"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/channel/UCX096v9TLUgetHZZScA5olQ" target="_blank" class="pl pl-sm"><i class="fa-brands fa-youtube"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROOF / RESULTS ===== -->
+  <section id="proof">
+    <div class="container">
+      <div class="sec-header reveal">
+        <div>
+          <div class="sec-num">05 / RESULTS</div>
+          <h2 class="sec-title">Kết Quả<br><span class="hl">& Minh Chứng</span></h2>
+          <div class="sec-line"></div>
+        </div>
+      </div>
+
+      <!-- ===== DỰ ÁN 1: GIFTBAG.VN ===== -->
+      <div class="proof-group reveal">
+        <div class="proof-group-head">
+          <span class="proof-group-num">01</span>
+          <h3 class="proof-group-title">Giftbag.vn SEO local Hà Nội</h3>
+          <div class="proof-group-line"></div>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-card reveal reveal-d1">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>search.google.com/search-console</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình Google Search Console thật của Giftbag.vn -->
+            <img class="proof-shot" src="image\gsc-giftbag.png" alt="Ảnh chụp Google Search Console - Giftbag.vn"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-image\'></i><span>Thêm ảnh chụp Google Search Console tại đây<br>(images/gsc-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Google Search Console</h5>
+                <p>Giftbag.vn · Tăng trưởng traffic</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng impressions thật từ báo cáo GSC -->
+              <span class="proof-metric">
+               <p>Lượt hiển thị tăng mạnh. </p> 
+               <p>Độ phủ của website trên kết quả</p>
+               <p>tìm kiếm được cải thiện rõ rệt</p></span>
+            </div>
+          </div>
+
+          <div class="proof-card reveal reveal-d2">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>analytics.google.com</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình Google Analytics thật của Giftbag.vn -->
+            <img class="proof-shot" src="image\ga4-giftbag.png" alt="Ảnh chụp Google Analytics - Giftbag.vn"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Google Analytics</h5>
+                <p>Giftbag.vn · Người dùng & phiên truy cập</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật từ Google Analytics -->
+              <span class="proof-metric">
+               <p> Google Organic đóng góp khoảng 97% tổng phiên,</p>
+               <p> khẳng định SEO là nguồn traffic chủ lực. </p> </span>
+            </div>
+          </div>
+           <div class="proof-card reveal reveal-d3">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>Chỉ số fanpage Túi vải Giftbag</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình thật của Giftbag.vn -->
+            <img class="proof-shot" src="image\fb-giftbag.png" alt="Ảnh chụp Google Analytics - Giftbag.vn"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Chỉ số fanpage Giftbag</h5>
+                <p>Giftbag.vn · Kết quả </p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật từ Google Analytics -->
+              <span class="proof-metric">
+               <p> Hỗ trợ SEO Offpage, Social Entity </p>
+               <p> và điều hướng người dùng về website. </p> </span>
+            </div>
+          </div>
+          <div class="proof-card reveal reveal-d4">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>Fanpage Túi Vải Giftbag</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình thật của Giftbag.vn -->
+            <img class="proof-shot" src="image\fanpage-giftbag.png" alt="Ảnh chụp Google Analytics - Giftbag.vn"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Fanpage Túi Vải Giftbag</h5>
+                <p>Giftbag.vn · Fanpage</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật -->
+              <span class="proof-metric">
+               <p> Duy trì lịch đăng bài đều đặn, </p>
+               <p> đảm bảo tính nhất quán của thương hiệu. </p> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== DỰ ÁN 2: GREENCLOTHBAG ===== -->
+      <div class="proof-group reveal">
+        <div class="proof-group-head">
+          <span class="proof-group-num">02</span>
+          <h3 class="proof-group-title">Greenclothbag SEO local Hà Nội</h3>
+          <div class="proof-group-line"></div>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-card reveal reveal-d1">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>search.google.com/search-console</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình Google Search Console thật của Greenclothbag -->
+            <img class="proof-shot" src="image\gsc-greenclothbag.png" alt="Ảnh chụp Google Search Console - Greenclothbag"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-magnifying-glass-chart\'></i><span>Thêm ảnh chụp thứ hạng từ khóa tại đây<br>(images/gsc-greenclothbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Google Search Console</h5>
+                <p>GreenClothBag · Tăng trưởng traffic</p>
+              </div>
+              <!-- TODO: thay bằng số lượng từ khóa top 10 thật -->
+              <span class="proof-metric">
+               <p>Khả năng xuất hiện trên Google</p> 
+               <p>được cải thiện mạnh mẽ sau quá trình tối ưu SEO. </p> 
+               </span>
+            </div>
+          </div>
+
+          <div class="proof-card reveal reveal-d2">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>analytics.google.com</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình Google Analytics thật của Greenclothbag -->
+            <img class="proof-shot" src="image\ga4-greenclothbag.png" alt="Ảnh chụp Google Analytics - Greenclothbag"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-greenclothbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Google Analytics</h5>
+                <p>Greenclothbag · Người dùng & phiên truy cập</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật -->
+              <span class="proof-metric">
+                <p>Organic Search chiếm khoảng 97,4% tổng số phiên,</p>
+                <p>chứng tỏ SEO là kênh thu hút người dùng chính của website. </p>
+              </span>
+            </div>
+          </div>
+                    <div class="proof-card reveal reveal-d3">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>Chỉ số fanpage GreenClothBag</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình thật của green -->
+            <img class="proof-shot" src="image\fb-greenclothbag.png" alt="Ảnh chụp Google Analytics - green"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Chỉ số fanpage GreenClothBag</h5>
+                <p>GreenClothBag · Kết quả </p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật từ Google Analytics -->
+              <span class="proof-metric">
+               <p> Xây dựng và duy trì nội dung theo kế hoạch </p>
+            </div>
+          </div>
+          <div class="proof-card reveal reveal-d4">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>Fanpage GreenClothBag</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình thật của Giftbag.vn -->
+            <img class="proof-shot" src="image\fanpage-greenclothbag.png" alt="Ảnh chụp Google Analytics - green"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Fanpage GreenClothBag</h5>
+                <p>GreenClothBag · Fanpage</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật -->
+              <span class="proof-metric">
+               <p> Duy trì lịch đăng bài đều đặn, </p>
+               <p> đảm bảo tính nhất quán của thương hiệu. </p> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== DỰ ÁN 3: TÚI VẢI THÀNH TIẾN ===== -->
+      <div class="proof-group reveal">
+        <div class="proof-group-head">
+          <span class="proof-group-num">03</span>
+          <h3 class="proof-group-title">Túi Vải Thành Tiến</h3>
+          <div class="proof-group-line"></div>
+        </div>
+        <div class="proof-grid">
+          <div class="proof-card reveal reveal-d1">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>search.google.com/search-console</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình Google Search Console thật của Túi Vải Thành Tiến -->
+            <img class="proof-shot" src="image\gsc-tuivaithanhtien.png" alt="Ảnh chụp Google Search Console - Túi Vải Thành Tiến"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-image\'></i><span>Thêm ảnh chụp Google Search Console tại đây<br>(images/gsc-thanhtien.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Google Search Console</h5>
+                <p>Túi Vải Thành Tiến · Tăng trưởng traffic</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng impressions thật từ báo cáo GSC -->
+              <span class="proof-metric">
+                <p>Độ phủ từ khóa và khả năng hiển thị </p>
+                <p>trên Google được cải thiện vượt bậc</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="proof-card reveal reveal-d2">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>analytics.google.com</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình Google Analytics thật của Túi Vải Thành Tiến -->
+            <img class="proof-shot" src="image\ga4-tuivaithanhtien.png" alt="Ảnh chụp Google Analytics - Túi Vải Thành Tiến"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-thanhtien.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Google Analytics</h5>
+                <p>Túi Vải Thành Tiến · Người dùng & phiên truy cập</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật từ Google Analytics -->
+              <span class="proof-metric">
+                <p>95,6% người dùng là khách hàng mới, </p>
+                <p>chứng tỏ SEO liên tục mở rộng tệp khách hàng</p>
+              </span>
+            </div>
+          </div>
+                    <div class="proof-card reveal reveal-d3">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>Chỉ số fanpage Túi vải Thành Tiến</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình thật của Giftbag.vn -->
+            <img class="proof-shot" src="image\fb-tuivaithanhtien.png" alt="Ảnh chụp tuivaithanhtien"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Chỉ số fanpage Túi Vải Thành Tiến</h5>
+                <p>Túi Vải Thành Tiến · Kết quả </p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật từ Google Analytics -->
+              <span class="proof-metric">
+               <p> Tăng độ nhận diện thương hiệu  </p>
+               <p> và mức độ tương tác tự nhiên. </p> </span>
+            </div>
+          </div>
+          <div class="proof-card reveal reveal-d4">
+            <div class="proof-chrome">
+              <span class="proof-dot d1"></span><span class="proof-dot d2"></span><span class="proof-dot d3"></span>
+              <span>Fanpage Túi Vải Thành Tiến</span>
+            </div>
+            <!-- Thay src bên dưới bằng ảnh chụp màn hình thật của tuivaithanhtien -->
+            <img class="proof-shot" src="image\fanpage-tuivaithanhtien.png" alt="Ảnh chụp tuivaithanhtien"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'), {className:'proof-empty', innerHTML:'<i class=\'fa-solid fa-chart-line\'></i><span>Thêm ảnh chụp Google Analytics tại đây<br>(images/analytics-giftbag.jpg)</span>'}))">
+            <div class="proof-caption">
+              <div>
+                <h5>Fanpage Túi Vải Thành Tiến</h5>
+                <p> Túi Vải Thành Tiến · Fanpage</p>
+              </div>
+              <!-- TODO: thay bằng % tăng trưởng sessions thật -->
+              <span class="proof-metric">
+               <p> Duy trì lịch đăng bài đều đặn, </p>
+               <p> đảm bảo tính nhất quán của thương hiệu. </p> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-big reveal">
+        <div class="contact-inner">
+          <div class="c-left">
+            <h2>Cùng nhau <em>tạo nên</em> điều lớn lao</h2>
+            <p>Tôi luôn sẵn lòng thảo luận về các dự án SEO và Digital Marketing đột phá. Hãy kết nối để bắt đầu!</p>
+          </div>
+          <div class="c-right">
+            <a href="mailto:lacamhong.work@gmail.com" class="c-btn c-email">
+              <span><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i>lacamhong.work@gmail.com</span>
+              <span class="arr">↗</span>
+            </a>
+            <a href="tel:0794929103" class="c-btn c-phone">
+              <span><i class="fa-solid fa-phone" style="margin-right: 10px;"></i>0794.929.103</span>
+              <span class="arr">↗</span>
+            </a>
+            <!-- TODO: thay # bằng link LinkedIn thật, ví dụ https://linkedin.com/in/ten-ban -->
+            <a href="#" target="_blank" class="c-btn c-li">
+              <span><i class="fa-brands fa-linkedin" style="margin-right: 10px;"></i>LinkedIn Profile</span>
+              <span class="arr">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 — LA THỊ CẨM HỒNG &nbsp;·&nbsp; DIGITAL MARKETING PORTFOLIO &nbsp;·&nbsp; DESIGNED WITH ME</div>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top = my + 'px';
+      cursor.style.transform = 'translate(-50%, -50%)';
+    });
+    function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+    document.querySelectorAll('a, button, .sticker').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '30px'; cursor.style.height = '30px';
+        cursor.style.background = 'var(--lime)';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '14px'; cursor.style.height = '14px';
+        cursor.style.background = 'var(--rose)';
+      });
+    });
+
+    // Scroll reveal
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
